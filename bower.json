@@ -1,0 +1,22 @@
+{
+    "name": "angular-bootstrap-file",
+    "main": [
+        "dist/angular-bootstrap-file-field.min.js",
+        "dist/angular-bootstrap-file-field.min.js.map"
+    ],
+    "ignore": [
+        "source",
+        "spec",
+        ".bowerrc",
+        ".gitignore",
+        ".jshintignore",
+        ".jshintrc",
+        "bower.json",
+        "gruntfile.js",
+        "package.json",
+        "README.md"
+    ],
+    "dependencies": {
+        "angular": "~1.3.0"
+    }
+}
