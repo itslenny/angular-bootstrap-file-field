@@ -3,7 +3,7 @@
  * angular-bootstrap-file
  * https://github.com/itslenny/angular-bootstrap-file-field
  *
- * Version: 0.1.2 - 02/21/2015
+ * Version: 0.1.3 - 02/21/2015
  * License: MIT
  */
 
