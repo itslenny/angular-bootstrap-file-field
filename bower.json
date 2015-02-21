@@ -1,5 +1,5 @@
 {
-    "name": "angular-bootstrap-file",
+    "name": "angular-bootstrap-file-field",
     "main": [
         "dist/angular-bootstrap-file-field.min.js",
         "dist/angular-bootstrap-file-field.min.js.map"
