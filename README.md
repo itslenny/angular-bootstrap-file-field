@@ -70,6 +70,6 @@ file-field also has full support for ng-class which can be used in conjunstion w
 
 ```html
 
-<file-field class="btn" ng-class="{'btn-primary':previewImage}" preview="previewImage"></file-field>
+<file-field class="btn" ng-class="{'btn-success':previewImage}" preview="previewImage"></file-field>
 
 ```
