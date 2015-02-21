@@ -40,6 +40,7 @@ bower install angular-bootstrap-file-field
 ##Configuration
 
 **Options**
+
 | Name | Values | Description |
 |---|---|---|
 | ng-model | scope variable | Behaves like ng-model on any other form element. Just binds to the $scope value in the controller. |
