@@ -23,11 +23,21 @@ bower install angular-bootstrap-file-field
 ##Usage
 
 **Minimal**
+
 ```html
 <file-field ng-model="uploadFile">Add File</file-field>
 ```
 
-**Image preview**
+**Show file name**
+
+```html
+<file-field ng-model="uploadFile">Add File</file-field>
+
+{{uploadFile.name}}
+```
+
+**Show image preview**
+
 ```html
 <file-field ng-model="uploadFile" preview="previewImage">Select File</file-field>
 
@@ -54,22 +64,22 @@ This directive creates a `<button>` tag and gives it the class bootstrap class "
 **bootstrap primary button**
 
 ```html
-<file-field class="btn btn-primary"></file-field>
+<file-field class="btn btn-primary" ng-model="foo"></file-field>
 ```
 
 **custom classes**
 
 ```html
-<file-field class="myCustomClass"></file-field>
+<file-field class="myCustomClass" ng-model="foo"></file-field>
 ```
 
 **dynamic class**
 
-file-field also has full support for ng-class which can be used in conjunstion with the preview attribute to make the button change classes (colors) once you select a file.
+file-field also has full support for ng-class which can be used in conjunstion with the model attribute to make the button change classes (colors) once you select a file.
 
 
 ```html
 
-<file-field class="btn" ng-class="{'btn-success':previewImage}" preview="previewImage"></file-field>
+<file-field class="btn" ng-class="{'btn-success':foo}"  ng-model="foo"></file-field>
 
 ```

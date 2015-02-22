@@ -32,7 +32,7 @@
                         <input ng-model="title" type="text" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <file-field class="btn" ng-model="uploadFile" ng-class="{'btn-success':previewImage}" preview="previewImage">Select File</file-field>
+                        <file-field class="btn" ng-model="uploadFile" ng-class="{'btn-success':uploadFile}" preview="previewImage">Select File</file-field>
                     </div>
                     <button class="btn btn-primary">Submit</button>
                 </form>
@@ -40,6 +40,8 @@
             <div class="col-sm-4" ng-show="previewImage">
                 <h3>Preview</h3>
                 <img ng-src="{{previewImage}}" width="200">
+                <br>
+                {{uploadFile.name}}
             </div>
         </div>
     </div>
