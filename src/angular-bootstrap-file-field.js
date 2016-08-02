@@ -20,6 +20,11 @@ angular.module('bootstrap.fileField',[])
 
         var fileField = element.find('input');
 
+        //If an ACCEPT attribute was provided, add it to the input.
+        if (attrs.accept) {
+          fileField.attr('accept', attrs.accept);
+        }
+
         fileField.bind('change', function(event){
             scope.$evalAsync(function () {
               ngModel.$setViewValue(event.target.files[0]);
@@ -39,8 +44,8 @@ angular.module('bootstrap.fileField',[])
         });
         element.bind('click',function(e){
             e.preventDefault();
-            fileField[0].click()
-        });        
+            fileField[0].click();
+        });
     },
     template:'<button type="button"><ng-transclude></ng-transclude><input type="file" style="display:none"></button>',
     replace:true,
